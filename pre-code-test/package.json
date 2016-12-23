@@ -1,8 +1,8 @@
 {
   "name": "ct",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "logger.js",
+  "main": "./dist/logger.js",
   "dependencies": {
     "chalk": "^1.1.3",
     "js-yaml": "^3.6.1"

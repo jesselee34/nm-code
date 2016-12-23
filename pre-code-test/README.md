@@ -12,7 +12,7 @@ Please do not overthink this, it should not take more than a few hours.
 ### Run
 ```npm start```    Shows how the logger is used
 
-## build
+### Build
 ```npm run build``` Transpiles ES6 code into dist/
 
 ### Test

@@ -18,6 +18,7 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-register",
+	"build": "babel logger.js -d dist",
     "start": "node useLogger"
   },
   "author": "",

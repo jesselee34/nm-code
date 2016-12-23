@@ -1,4 +1,4 @@
-import {logger as Logger} from '../logger';
+import {Logger} from '../logger';
 import chai from 'chai';
 import sinon from 'sinon';
 
@@ -7,6 +7,15 @@ let expect = chai.expect;
 describe('Logger', () => {
 
 	describe('constructor', () => {
+
+		it('should not throw an exception if the new keyword is omitted.', () => {
+			expect(Logger()).to.not.throw;
+		});
+
+		it('should should still return an instance if the new keyword is omitted.', () => {
+			let logger = Logger();
+			expect(logger instanceof Logger).to.be.true;
+		});
 
 		it('if a "format" function is provided, should overwrite the prototype "format" method with the provided.', () => {
 			let format = () => 'hello';
